@@ -9,25 +9,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./assets/json/data.json":
-/*!*******************************!*\
-  !*** ./assets/json/data.json ***!
-  \*******************************/
-/*! default exports */
-/*! export a [provided] [no usage info] [missing usage info prevents renaming] */
-/*! export b [provided] [no usage info] [missing usage info prevents renaming] */
-/*!   export 0 [provided] [no usage info] [missing usage info prevents renaming] */
-/*!   export 1 [provided] [no usage info] [missing usage info prevents renaming] */
-/*!   other exports [not provided] [no usage info] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: module */
-/***/ ((module) => {
-
-"use strict";
-eval("module.exports = JSON.parse(\"{\\\"a\\\":123,\\\"b\\\":[\\\"123\\\",\\\"234\\\"]}\");\n\n//# sourceURL=webpack://webpack-demo/./assets/json/data.json?");
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/cjs.js!./index.css":
 /*!*********************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./index.css ***!
@@ -68,19 +49,6 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 
 "use strict";
 eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // eslint-disable-next-line no-param-reassign\n    options = {};\n  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign\n\n\n  url = url && url.__esModule ? url.default : url;\n\n  if (typeof url !== 'string') {\n    return url;\n  } // If url is already wrapped in quotes, remove them\n\n\n  if (/^['\"].*['\"]$/.test(url)) {\n    // eslint-disable-next-line no-param-reassign\n    url = url.slice(1, -1);\n  }\n\n  if (options.hash) {\n    // eslint-disable-next-line no-param-reassign\n    url += options.hash;\n  } // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n\n\n  if (/[\"'() \\t\\n]/.test(url) || options.needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, '\\\\n'), \"\\\"\");\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack://webpack-demo/./node_modules/css-loader/dist/runtime/getUrl.js?");
-
-/***/ }),
-
-/***/ "./assets/csv/data.csv":
-/*!*****************************!*\
-  !*** ./assets/csv/data.csv ***!
-  \*****************************/
-/*! unknown exports (runtime-defined) */
-/*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 1:0-14 */
-/***/ ((module) => {
-
-eval("module.exports = [[\"to\",\"from\",\"heading\",\"body\"],[\"Mary\",\"John\",\"Reminder\",\"Call Cindy on Tuesday\"],[\"Zoe\",\"Bill\",\"Reminder\",\"Buy orange juice\"],[\"Autumn\",\"Lindsey\",\"Letter\",\"I miss you\"]]\n\n//# sourceURL=webpack://webpack-demo/./assets/csv/data.csv?");
 
 /***/ }),
 
@@ -158,19 +126,6 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
-/***/ "./assets/xml/data.xml":
-/*!*****************************!*\
-  !*** ./assets/xml/data.xml ***!
-  \*****************************/
-/*! unknown exports (runtime-defined) */
-/*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 1:0-14 */
-/***/ ((module) => {
-
-eval("module.exports = {\"note\":{\"to\":[\"Mary\"],\"from\":[\"John\"],\"heading\":[\"Reminder\"],\"body\":[\"Call Cindy on Tuesday\"]}}\n\n//# sourceURL=webpack://webpack-demo/./assets/xml/data.xml?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -181,7 +136,22 @@ eval("module.exports = {\"note\":{\"to\":[\"Mary\"],\"from\":[\"John\"],\"headin
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _assets_images_flutter_red_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/images/flutter-red.png */ \"./assets/images/flutter-red.png\");\n/* harmony import */ var _assets_csv_data_csv__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/csv/data.csv */ \"./assets/csv/data.csv\");\n/* harmony import */ var _assets_csv_data_csv__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_csv_data_csv__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _assets_xml_data_xml__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/xml/data.xml */ \"./assets/xml/data.xml\");\n/* harmony import */ var _assets_xml_data_xml__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_xml_data_xml__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _assets_json_data_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/json/data.json */ \"./assets/json/data.json\");\n\r\n\r\n\r\n\r\n\r\nfunction component(){\r\n    let div = document.createElement('div');\r\n    \r\n\r\n    div.innerText = lodash__WEBPACK_IMPORTED_MODULE_0___default().join([\"hello\",\"world\"],' ');\r\n\r\n\r\n    let myIcon = new Image();\r\n\r\n    myIcon.src = _assets_images_flutter_red_png__WEBPACK_IMPORTED_MODULE_1__.default;\r\n\r\n    div.appendChild(myIcon);\r\n\r\n    div.classList.add('hello');\r\n    return div;\r\n}\r\n\r\ndocument.body.appendChild(component());\r\nconsole.log('index load load ');\r\n\r\n\r\nconsole.log((_assets_csv_data_csv__WEBPACK_IMPORTED_MODULE_2___default()));\r\nconsole.log((_assets_xml_data_xml__WEBPACK_IMPORTED_MODULE_3___default()));\r\n\r\nconsole.log(_assets_json_data_json__WEBPACK_IMPORTED_MODULE_4__);\r\n\r\n\r\n__webpack_require__(/*! ../index.css */ \"./index.css\");\n\n//# sourceURL=webpack://webpack-demo/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _print__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./print */ \"./src/print.js\");\n\r\n\r\n\r\n\r\nfunction component(){\r\n    let div = document.createElement('div');\r\n    let btn = document.createElement('button');\r\n\r\n    div.innerText = lodash__WEBPACK_IMPORTED_MODULE_0___default().join([\"hello\",\"world\"],' ');\r\n\r\n\r\n    btn.onclick = _print__WEBPACK_IMPORTED_MODULE_1__.default;\r\n\r\n\r\n    btn.innerText = '点击这儿,查看 console';\r\n\r\n\r\n    div.appendChild(btn);\r\n\r\n\r\n\r\n    div.classList.add('hello');\r\n    return div;\r\n}\r\n\r\ndocument.body.appendChild(component());\r\n\r\nconsole.log('index load load ');\r\n\r\n\r\n__webpack_require__(/*! ../index.css */ \"./index.css\");\n\n//# sourceURL=webpack://webpack-demo/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/print.js":
+/*!**********************!*\
+  !*** ./src/print.js ***!
+  \**********************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => /* binding */ printMe\n/* harmony export */ });\nfunction printMe(){\r\n    console.log('I get called from print.js');\r\n}\n\n//# sourceURL=webpack://webpack-demo/./src/print.js?");
 
 /***/ })
 

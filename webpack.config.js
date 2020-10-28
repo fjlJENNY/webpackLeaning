@@ -3,15 +3,22 @@ const path = require('path');
 
 const WebpackConsole = require('./webpack.console');
 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+
+
 const resolve = function(dst){
     return path.resolve(__dirname,dst);
 }
 
 module.exports = {
-    entry:'./src/index.js',
+    entry: {
+        "app":'./src/index.js',
+        "print":"./src/print.js"
+    },
     output:{
         path:resolve('dist'),
-        filename:"bundle.js",
+        filename:"[name].bundle.js",
     },
     module:{
         rules:[
@@ -28,5 +35,10 @@ module.exports = {
 
     plugins: [
         new WebpackConsole(),
+        new CleanWebpackPlugin(),
+        new HtmlWebpackPlugin({
+            title:"管理输出"
+        }),
+        
     ]
 }
