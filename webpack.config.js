@@ -17,7 +17,7 @@ module.exports = {
         // "print":{import:"./src/print.js",dependOn:'shared'},
         "app": './src/index.js' ,
         "print": "./src/print.js",
-        "another":"./src/another-module.js",
+        
         //"shared":'lodash',
     },
     output:{
@@ -60,10 +60,6 @@ module.exports = {
         contentBase:'./dist'
     },
 
-    optimization:{
-        splitChunks:{
-            chunks:'all'
-        }
-    }
+    
 
 }
