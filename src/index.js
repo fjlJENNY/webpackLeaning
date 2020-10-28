@@ -1,6 +1,4 @@
-
-
-import print from './print';
+import Print from './print';
 
 require("../index.css");
 
@@ -16,7 +14,7 @@ require("../index.css");
     div.classList.add('hello');
     div.innerText = _.join(["hello","world"],' ');
 
-    btn.onclick = print;
+    btn.onclick = Print.bind(null,'Hello world');
     btn.innerText = '点击这儿,查看 console';
 
 

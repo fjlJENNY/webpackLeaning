@@ -22,7 +22,7 @@ module.exports = {
     },
     output:{
         path:resolve('dist'),
-        filename:"[name].bundle.js",
+        filename:"[name].[contenthash].js",
         publicPath:'/'
     },
     module:{
@@ -60,6 +60,17 @@ module.exports = {
         contentBase:'./dist'
     },
 
-    
+    optimization: {
+        runtimeChunk:'single',
+        splitChunks:{
+            cacheGroups:{
+                vendor:{
+                    test:/[\\/]node_modules[\\/]/,
+                    name:"vendors",
+                    chunks:"all",
+                }
+            }
+        }
+    }   
 
 }
