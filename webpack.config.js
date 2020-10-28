@@ -18,6 +18,9 @@ module.exports = {
             {test:/\.css$/,use:['style-loader','css-loader']},
             {test:/\.ts$/,use:'ts-loader'},
             {test:/\.(jpg|png|jpeg|gif)$/,use:'file-loader'},
+            {test:/\.(ttf|eot|woff|woff2|otf)$/,use:['file-loader']},
+            {test:/\.xml$/,use:['xml-loader']},
+            {test:/\.(csv|tsv)$/,use:['csv-loader']}
         ]
     },
     //mode:'production',

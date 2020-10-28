@@ -9,6 +9,25 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./assets/json/data.json":
+/*!*******************************!*\
+  !*** ./assets/json/data.json ***!
+  \*******************************/
+/*! default exports */
+/*! export a [provided] [no usage info] [missing usage info prevents renaming] */
+/*! export b [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export 0 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   export 1 [provided] [no usage info] [missing usage info prevents renaming] */
+/*!   other exports [not provided] [no usage info] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: module */
+/***/ ((module) => {
+
+"use strict";
+eval("module.exports = JSON.parse(\"{\\\"a\\\":123,\\\"b\\\":[\\\"123\\\",\\\"234\\\"]}\");\n\n//# sourceURL=webpack://webpack-demo/./assets/json/data.json?");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./index.css":
 /*!*********************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./index.css ***!
@@ -20,7 +39,7 @@
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _assets_flutter_red_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/flutter-red.png */ \"./assets/flutter-red.png\");\n// Imports\n\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_flutter_red_png__WEBPACK_IMPORTED_MODULE_2__.default);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"*{\\r\\n    margin:0;\\r\\n    padding:0;\\r\\n}\\r\\n\\r\\n\\r\\n.hello{\\r\\n    padding-left:2em;\\r\\n}\\r\\n\\r\\n.hello::before{\\r\\n    content: \\\"\\\";\\r\\n    width:1em;\\r\\n    height: 1em;\\r\\n    display: inline-block;\\r\\n    background:url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \") 100% 100% no-repeat;\\r\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://webpack-demo/./index.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _assets_fonts_HennyPenny_Regular_ttf__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/fonts/HennyPenny-Regular.ttf */ \"./assets/fonts/HennyPenny-Regular.ttf\");\n/* harmony import */ var _assets_images_flutter_red_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/images/flutter-red.png */ \"./assets/images/flutter-red.png\");\n// Imports\n\n\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_fonts_HennyPenny_Regular_ttf__WEBPACK_IMPORTED_MODULE_2__.default);\nvar ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_assets_images_flutter_red_png__WEBPACK_IMPORTED_MODULE_3__.default);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"@font-face{\\r\\n    font-family: 'HennyPenny';\\r\\n    src:url(\\r\\n        \" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \"\\r\\n       \\r\\n    ) format('truetype');\\r\\n}\\r\\n\\r\\n*{\\r\\n    margin:0;\\r\\n    padding:0;\\r\\n}\\r\\n\\r\\n\\r\\n.hello{\\r\\n    padding-left:2em;\\r\\n    font-family: 'HennyPenny';\\r\\n\\r\\n}\\r\\n\\r\\n.hello::before{\\r\\n    content: \\\"\\\";\\r\\n    width:1em;\\r\\n    height: 1em;\\r\\n    display: inline-block;\\r\\n    background:url(\" + ___CSS_LOADER_URL_REPLACEMENT_1___ + \") 100% 100% no-repeat;\\r\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://webpack-demo/./index.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -52,10 +71,23 @@ eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // 
 
 /***/ }),
 
-/***/ "./assets/flutter-red.png":
-/*!********************************!*\
-  !*** ./assets/flutter-red.png ***!
-  \********************************/
+/***/ "./assets/csv/data.csv":
+/*!*****************************!*\
+  !*** ./assets/csv/data.csv ***!
+  \*****************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 1:0-14 */
+/***/ ((module) => {
+
+eval("module.exports = [[\"to\",\"from\",\"heading\",\"body\"],[\"Mary\",\"John\",\"Reminder\",\"Call Cindy on Tuesday\"],[\"Zoe\",\"Bill\",\"Reminder\",\"Buy orange juice\"],[\"Autumn\",\"Lindsey\",\"Letter\",\"I miss you\"]]\n\n//# sourceURL=webpack://webpack-demo/./assets/csv/data.csv?");
+
+/***/ }),
+
+/***/ "./assets/fonts/HennyPenny-Regular.ttf":
+/*!*********************************************!*\
+  !*** ./assets/fonts/HennyPenny-Regular.ttf ***!
+  \*********************************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
@@ -63,7 +95,22 @@ eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // 
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"309a423dec430d595b94628a1aa27c68.png\");\n\n//# sourceURL=webpack://webpack-demo/./assets/flutter-red.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"f60ba8e117afaff8bc327acb163e682b.ttf\");\n\n//# sourceURL=webpack://webpack-demo/./assets/fonts/HennyPenny-Regular.ttf?");
+
+/***/ }),
+
+/***/ "./assets/images/flutter-red.png":
+/*!***************************************!*\
+  !*** ./assets/images/flutter-red.png ***!
+  \***************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.p, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"309a423dec430d595b94628a1aa27c68.png\");\n\n//# sourceURL=webpack://webpack-demo/./assets/images/flutter-red.png?");
 
 /***/ }),
 
@@ -111,6 +158,19 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
+/***/ "./assets/xml/data.xml":
+/*!*****************************!*\
+  !*** ./assets/xml/data.xml ***!
+  \*****************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 1:0-14 */
+/***/ ((module) => {
+
+eval("module.exports = {\"note\":{\"to\":[\"Mary\"],\"from\":[\"John\"],\"heading\":[\"Reminder\"],\"body\":[\"Call Cindy on Tuesday\"]}}\n\n//# sourceURL=webpack://webpack-demo/./assets/xml/data.xml?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -121,7 +181,7 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n\r\nfunction component(){\r\n    let div = document.createElement('div');\r\n    div.innerText = lodash__WEBPACK_IMPORTED_MODULE_0___default().join([\"hello\",\"world\"],' ');\r\n    div.classList.add('hello');\r\n    return div;\r\n}\r\n\r\ndocument.body.appendChild(component());\r\nconsole.log('index load load ');\r\n\r\n__webpack_require__(/*! ../index.css */ \"./index.css\");\n\n//# sourceURL=webpack://webpack-demo/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _assets_images_flutter_red_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/images/flutter-red.png */ \"./assets/images/flutter-red.png\");\n/* harmony import */ var _assets_csv_data_csv__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/csv/data.csv */ \"./assets/csv/data.csv\");\n/* harmony import */ var _assets_csv_data_csv__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_csv_data_csv__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _assets_xml_data_xml__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/xml/data.xml */ \"./assets/xml/data.xml\");\n/* harmony import */ var _assets_xml_data_xml__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_xml_data_xml__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _assets_json_data_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/json/data.json */ \"./assets/json/data.json\");\n\r\n\r\n\r\n\r\n\r\nfunction component(){\r\n    let div = document.createElement('div');\r\n    \r\n\r\n    div.innerText = lodash__WEBPACK_IMPORTED_MODULE_0___default().join([\"hello\",\"world\"],' ');\r\n\r\n\r\n    let myIcon = new Image();\r\n\r\n    myIcon.src = _assets_images_flutter_red_png__WEBPACK_IMPORTED_MODULE_1__.default;\r\n\r\n    div.appendChild(myIcon);\r\n\r\n    div.classList.add('hello');\r\n    return div;\r\n}\r\n\r\ndocument.body.appendChild(component());\r\nconsole.log('index load load ');\r\n\r\n\r\nconsole.log((_assets_csv_data_csv__WEBPACK_IMPORTED_MODULE_2___default()));\r\nconsole.log((_assets_xml_data_xml__WEBPACK_IMPORTED_MODULE_3___default()));\r\n\r\nconsole.log(_assets_json_data_json__WEBPACK_IMPORTED_MODULE_4__);\r\n\r\n\r\n__webpack_require__(/*! ../index.css */ \"./index.css\");\n\n//# sourceURL=webpack://webpack-demo/./src/index.js?");
 
 /***/ })
 

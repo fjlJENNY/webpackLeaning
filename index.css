@@ -1,3 +1,11 @@
+@font-face{
+    font-family: 'HennyPenny';
+    src:url(
+        '/assets/fonts/HennyPenny-Regular.ttf'
+       
+    ) format('truetype');
+}
+
 *{
     margin:0;
     padding:0;
@@ -6,6 +14,8 @@
 
 .hello{
     padding-left:2em;
+    font-family: 'HennyPenny';
+
 }
 
 .hello::before{
@@ -13,5 +23,5 @@
     width:1em;
     height: 1em;
     display: inline-block;
-    background:url("/assets/flutter-red.png") 100% 100% no-repeat;
+    background:url("/assets/images/flutter-red.png") 100% 100% no-repeat;
 }
