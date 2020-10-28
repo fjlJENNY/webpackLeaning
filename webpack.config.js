@@ -19,6 +19,7 @@ module.exports = {
     output:{
         path:resolve('dist'),
         filename:"[name].bundle.js",
+        publicPath:'/'
     },
     module:{
         rules:[
@@ -32,10 +33,19 @@ module.exports = {
     },
     //mode:'production',
     mode:'development',
+    devtool:'source-map',
+    devServer:{
+        contentBase:'./dist'
+    },
 
     plugins: [
+        new CleanWebpackPlugin(
+            {
+                cleanStaleWebpackAssets:false,
+            }
+        ),
         new WebpackConsole(),
-        new CleanWebpackPlugin(),
+       
         new HtmlWebpackPlugin({
             title:"管理输出"
         }),
