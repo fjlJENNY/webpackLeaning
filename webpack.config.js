@@ -6,12 +6,16 @@ const WebpackConsole = require('./webpack.console');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
+const ProgressPlugin  = require('progress-webpack-plugin');
+
 
 const resolve = function(dst){
     return path.resolve(__dirname,dst);
 }
 
-module.exports = {
+module.exports = (env) => {
+    console.log(env)
+    return {
     entry: {
         // "app":{import:'./src/index.js',dependOn:'shared'},
         // "print":{import:"./src/print.js",dependOn:'shared'},
@@ -23,7 +27,8 @@ module.exports = {
     output:{
         path:resolve('dist'),
         filename:"[name].[contenthash].js",
-        publicPath:'/'
+        publicPath:'/',
+        pathinfo:false,
     },
     module:{
         rules:[
@@ -38,9 +43,6 @@ module.exports = {
     //mode:'production',
     mode:'development',
    
-
-
-
     plugins: [
         new CleanWebpackPlugin(
             {
@@ -52,7 +54,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             title:"管理输出"
         }),
-        
+        new ProgressPlugin(true),
     ],
 
     // devtool:'source-map',
@@ -73,4 +75,4 @@ module.exports = {
         }
     }   
 
-}
+}};
