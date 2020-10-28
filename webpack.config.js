@@ -13,8 +13,12 @@ const resolve = function(dst){
 
 module.exports = {
     entry: {
-        "app":'./src/index.js',
-        "print":"./src/print.js"
+        // "app":{import:'./src/index.js',dependOn:'shared'},
+        // "print":{import:"./src/print.js",dependOn:'shared'},
+        "app": './src/index.js' ,
+        "print": "./src/print.js",
+        "another":"./src/another-module.js",
+        //"shared":'lodash',
     },
     output:{
         path:resolve('dist'),
@@ -33,10 +37,9 @@ module.exports = {
     },
     //mode:'production',
     mode:'development',
-    devtool:'source-map',
-    devServer:{
-        contentBase:'./dist'
-    },
+   
+
+
 
     plugins: [
         new CleanWebpackPlugin(
@@ -50,5 +53,17 @@ module.exports = {
             title:"管理输出"
         }),
         
-    ]
+    ],
+
+    // devtool:'source-map',
+    devServer:{
+        contentBase:'./dist'
+    },
+
+    optimization:{
+        splitChunks:{
+            chunks:'all'
+        }
+    }
+
 }
