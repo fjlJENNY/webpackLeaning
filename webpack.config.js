@@ -20,7 +20,7 @@ module.exports = (env) => {
         // "app":{import:'./src/index.js',dependOn:'shared'},
         // "print":{import:"./src/print.js",dependOn:'shared'},
         "app": './src/index.js' ,
-        "print": "./src/print.js",
+        // "print": "./src/print.js",
         
         //"shared":'lodash',
     },
@@ -59,11 +59,13 @@ module.exports = (env) => {
 
     // devtool:'source-map',
     devServer:{
-        contentBase:'./dist'
+        contentBase:'./dist',
+        hot:true,
     },
 
     optimization: {
         runtimeChunk:'single',
+        usedExports: true,
         splitChunks:{
             cacheGroups:{
                 vendor:{
